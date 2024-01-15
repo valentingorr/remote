@@ -1,4 +1,5 @@
 import "./style/style.scss";
+import "./style/index.scss";
 
 import $  from "jquery";
 

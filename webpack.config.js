@@ -4,7 +4,10 @@ process.env.mode =
 	process.env.mode === "production" ? "production" : "development";
 
 module.exports = {
-	entry: "./src/index.js",
+	entry: {
+		index: "./src/index.js",
+		auth: "./src/auth.js",
+	},
 	mode: process.env.mode,
 	target: "web",
 	devtool: "inline-source-map",
@@ -21,7 +24,7 @@ module.exports = {
 	stats: "errors-only",
 	output: {
 		path: path.resolve(__dirname, "public/static/bundle/"),
-		filename: "app.bundle.js",
+		filename: "[name].bundle.js",
 		publicPath: "/bundle/"
 	},
 	module: {

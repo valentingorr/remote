@@ -1,0 +1,39 @@
+@import "config";
+
+body {
+	$gap: 10px;
+	#wrapper {
+		display: flex;
+		justify-content: center;
+		@include size(100%);
+		> form {
+			display: flex;
+			flex-direction: column;
+			gap: $gap;
+			width: 100%;
+			padding: 1rem;
+			background-color: $body-dark-secondary;
+			> div {
+				width: 100%;
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: $gap;
+				> input {
+					background-color: $body-dark-primary;
+					width: 100%;
+					aspect-ratio: 1 / 1;
+					text-align: center;
+					color: white;
+					font-family: Roboto-Bold, sans-serif;
+					font-size: 1.75rem;
+				}
+			}
+			> button {
+				width: 100%;
+				padding: .5rem;
+				font-family: Roboto-Bold, sans-serif;
+				font-size: 1.125rem;
+			}
+		}
+	}
+}
