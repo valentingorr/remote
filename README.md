@@ -1,6 +1,5 @@
 # Remote
-
-![preview](https://i.imgur.com/tnWgz2l.png)
+<img src="https://i.imgur.com/tnWgz2l.png" height="500">
 
 ```bash
 npm install
